@@ -1,5 +1,5 @@
 {
-	"name": "caco",
+	"name": "capi-companion",
 	"version": "0.0.0",
 	"license": "MIT",
 	"bin": "dist/cli.js",
@@ -10,13 +10,18 @@
 	"scripts": {
 		"build": "tsc",
 		"dev": "tsc --watch",
-		"test": "prettier --check . && xo && ava"
+		"test": "prettier --check . && xo && ava",
+		"sync": "capi sync node --runtime-config  package.json --server https://capi.dev/"
 	},
 	"files": [
 		"dist"
 	],
 	"dependencies": {
+		"@capi/westend": "https://capi.dev/b33e3e53689c9ad6/westend.tar",
+    	"capi": "^0.1.0-beta.40",
 		"ink": "^4.1.0",
+		"ink-select-input": "^5.0.0",
+		"ink-text-input": "^5.0.1",
 		"pastel": "^2.0.0",
 		"react": "^18.2.0",
 		"zod": "^3.21.4"
