@@ -1,4 +1,4 @@
-# Capi Companion
+# Capi Companion (`caco`)
 
 CLI playground for using substrate chains through [capi](https://github.com/paritytech/capi).
 
