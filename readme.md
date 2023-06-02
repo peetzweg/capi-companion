@@ -2,24 +2,39 @@
 
 CLI playground for using substrate chains through [capi](https://github.com/paritytech/capi).
 
-## Install
+Meant for internal exploration of capi.
+
+## Local Development
 
 ```bash
-$ npm install --global caco
+npm install
+```
+```bash
+npm link
+```
+
+```bash
+npm run dev
+```
+
+```bash
+caco account new
 ```
 
 ## CLI
 
 ```
-$ caco --help
+❯ caco --help
+Usage: caco [options] [command]
 
-  Usage
-    $ caco
+Options:
+  --name [name]                    Name (default: "Stranger")
+  -h, --help                       Show help
 
-Link executable  Options
-    --name  Your name
-
-  Examples
-    $ caco --name=Jane
-    Hello, Jane
+Commands:
+  account
+  encode [options] <codec> <data>
+  multisig
+  pallet
+  help [command]                   Show help for command
 ```
